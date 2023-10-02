@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/react-dialog": "^1.0.5",
     "@sanity/client": "^6.4.12",
     "@sanity/image-url": "1",
     "@sanity/vision": "3",

@@ -1,6 +1,8 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Poppins, Open_Sans } from 'next/font/google';
+import Navbar from '@/layouts/Navbar';
+import Footer from '@/layouts/Footer';
 
 const heading = Poppins({
 	style: ['italic', 'normal'],
@@ -31,7 +33,9 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body className={`${heading.variable} ${body.variable} font-body`}>
+				<Navbar />
 				{children}
+				<Footer />
 			</body>
 		</html>
 	);
