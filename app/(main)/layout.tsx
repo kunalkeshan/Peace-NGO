@@ -1,8 +1,22 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Poppins, Open_Sans } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] });
+const heading = Poppins({
+	style: ['italic', 'normal'],
+	subsets: ['latin'],
+	display: 'swap',
+	weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+	variable: '--font-heading',
+});
+
+const body = Open_Sans({
+	style: ['italic', 'normal'],
+	subsets: ['latin'],
+	display: 'swap',
+	weight: ['300', '400', '500', '600', '700', '800'],
+	variable: '--font-body',
+});
 
 export const metadata: Metadata = {
 	title: 'Create Next App',
@@ -16,7 +30,9 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='en'>
-			<body className={inter.className}>root layout{children}</body>
+			<body className={`${heading.variable} ${body.variable} font-body`}>
+				{children}
+			</body>
 		</html>
 	);
 }
