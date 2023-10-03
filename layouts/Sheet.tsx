@@ -1,4 +1,7 @@
-import React from 'react';
+'use client';
+
+import React, { useState } from 'react';
+import Link from 'next/link';
 import {
 	Sheet,
 	SheetContent,
@@ -9,14 +12,24 @@ import {
 	SheetTrigger,
 } from '@/components/ui/sheet';
 import { Menu } from 'lucide-react';
+import { NAVBAR_NAVIGATION } from '@/data/navigation';
 
 const SheetComponent = () => {
+	const [open, setOpen] = useState(false);
+
+	const handleCloseSheet = () => {
+		setOpen(false);
+	};
+
 	return (
-		<Sheet>
+		<Sheet open={open} onOpenChange={setOpen}>
 			<SheetTrigger>
 				<Menu />
 			</SheetTrigger>
-			<SheetContent>
+			<SheetContent
+				side={'top'}
+				className='h-full flex flex-col justify-between'
+			>
 				<SheetHeader>
 					<SheetTitle>Are you sure absolutely sure?</SheetTitle>
 					<SheetDescription>
@@ -25,6 +38,15 @@ const SheetComponent = () => {
 						servers.
 					</SheetDescription>
 				</SheetHeader>
+				<ul className=''>
+					{NAVBAR_NAVIGATION.map((item) => (
+						<li key={`nav-sheet-${item.url}`}>
+							<Link target={item.target} href={item.url}>
+								{item.name}
+							</Link>
+						</li>
+					))}
+				</ul>
 				<SheetFooter>address</SheetFooter>
 			</SheetContent>
 		</Sheet>

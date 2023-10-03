@@ -6,7 +6,7 @@ import Stories from '@/components/home/Stories';
 
 export default function Home() {
 	return (
-		<main>
+		<main className='bg-app-bg'>
 			<Hero />
 			<WhatWeDo />
 			<Approach />
