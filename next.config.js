@@ -6,6 +6,16 @@ const nextConfig = {
                 protocol: 'https',
                 hostname: 'cdn.sanity.io',
             },
+            {
+                protocol: 'https',
+                hostname: 'free4kwallpapers.com',
+                pathname: '**',
+            },
+            {
+                protocol: 'https',
+                hostname: 'img.icons8.com',
+                pathname: '**',
+            },
         ],
     },
 }
