@@ -8,7 +8,7 @@ const Approach = () => {
 				<h2 className='text-4xl lg:text-6xl leading-tight'>
 					Our Approach
 				</h2>
-				<div className='flex flex-col gap-4 text-base lg:text-2xl'>
+				<div className='flex flex-col gap-4 text-base lg:text-xl text-slate-500'>
 					<p className=''>
 						With a focus on rural youth, our NGO is dedicated to
 						fostering peace within humanity, nature, and the
