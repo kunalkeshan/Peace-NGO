@@ -16,7 +16,7 @@ const Navbar = () => {
 	});
 	return (
 		<nav
-			className={`${header} fixed top-0 w-full transition-all duration-300 font-heading`}
+			className={`${header} fixed top-0 w-full transition-all duration-300 font-heading z-50`}
 		>
 			<div className='w-full h-[5rem] flex justify-between items-center p-4 md:px-16 lg:max-w-7xl lg:mx-auto'>
 				<div>

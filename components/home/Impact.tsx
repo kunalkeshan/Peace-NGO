@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Impact = () => {
-	return <section>Impact</section>;
+	return <section className='min-h-screen'>Impact</section>;
 };
 
 export default Impact;
