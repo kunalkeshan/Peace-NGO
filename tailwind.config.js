@@ -34,7 +34,7 @@ module.exports = {
         foreground: "hsl(var(--foreground))",
         app: {
           primary: '#3b82f6',
-          secondary: '#0ea539',
+          secondary: '#0ea5e9',
           text: '#121212',
           bg: '#f1f5f9'
         },

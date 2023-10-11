@@ -15,12 +15,12 @@ const Hero = () => {
 					<p className='text-sm lg:text-lg '>
 						How can you get involved?
 					</p>
-					<h1 className='text-base lg:text-xl text-slate-500'>
-						Making a small difference in someone’s life adds meaning
-						to every endeavor. Samaritans like you make us
+					<p className='text-base lg:text-xl text-slate-500'>
+						Making a small difference in someone&apos;s life adds
+						meaning to every endeavor. Samaritans like you make us
 						successful in our purpose, “Creating a Thriving
 						Tomorrow, One Rural Youth at a Time”
-					</h1>
+					</p>
 				</div>
 				<Button className='lg:w-fit'>Yes, I want to contribute</Button>
 			</div>
