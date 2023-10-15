@@ -7,14 +7,14 @@ const WhatWeDo = () => {
 			<div className='py-16 lg:py-32 flex flex-col justify-center lg:flex-row gap-6 p-4 md:px-16 lg:max-w-7xl lg:mx-auto'>
 				<div className='flex flex-col gap-4 lg:w-1/2'>
 					<h2 className='text-2xl lg:text-4xl'>What we do</h2>
-					<p className='text-sm lg:text-lg text-slate-500'>
+					<p className='text-base lg:text-lg text-slate-500'>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
 						Libero consectetur veritatis explicabo quas quae.
 						Laborum, tempore ullam impedit quia omnis sit, excepturi
 						cumque perspiciatis culpa eaque voluptates dicta modi
 						voluptatibus!
 					</p>
-					<div className='bg-app-text/50 text-black rounded-lg p-4 flex items-center justify-between w-full'>
+					<div className='bg-app-secondary/50 text-black rounded-lg p-4 flex items-center justify-between w-full md:mx-auto lg:mx-0 md:w-fit'>
 						<div className='w-1/4'>
 							<Image
 								src={

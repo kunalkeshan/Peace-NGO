@@ -10,19 +10,9 @@ const Footer = () => {
 					<div className='w-full border-b p-2 md:p-4'>
 						<div className='flex flex-col items-center justify-between md:items-start lg:flex-row'>
 							<Link href='/' className='flex items-center'>
-								<Image
-									src={
-										'https://res.cloudinary.com/dm5excyly/image/upload/v1672321839/assets/branding/logo-png-square.png'
-									}
-									alt='Codelance Devs'
-									width={100}
-									height={100}
-									className='mb-[40px] h-auto w-10 md:ml-[12px] lg:mb-0'
-								/>
-								<h1 className='mb-[40px] leading-none lg:mb-0'>
-									Codelance <br />
-									Devs
-								</h1>
+								<p className='mb-[40px] leading-none lg:mb-0'>
+									Peace NGO
+								</p>
 							</Link>
 							<div className='flex w-full flex-col items-center justify-between md:flex-row lg:justify-end'>
 								<div className='mb-4 flex flex-col items-stretch justify-start text-center md:flex-row'>
@@ -101,8 +91,7 @@ const Footer = () => {
 								</a>
 							</div>
 							<p className='mb-4 text-[12px] text-[#777a85]'>
-								Copyright &copy; {new Date().getFullYear()}{' '}
-								Codelance Devs
+								Copyright &copy; 2023 Peace NGO
 							</p>
 						</div>
 					</div>

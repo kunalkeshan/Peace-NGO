@@ -5,11 +5,14 @@ import Link from 'next/link';
 import SheetComponent from './Sheet';
 import { NAVBAR_NAVIGATION } from '@/data/navigation';
 import { Button } from '@/components/ui/button';
+import { Heart } from 'lucide-react';
 
 const Navbar = () => {
 	const [header, setHeader] = useState('bg-app-bg');
 	const listenScrollEvent = () => {
-		window.scrollY > 10 ? setHeader('bg-white') : setHeader('bg-app-bg');
+		window.scrollY > 10
+			? setHeader('bg-white border-b border-slate-200')
+			: setHeader('bg-app-bg');
 	};
 	useEffect(() => {
 		window.addEventListener('scroll', listenScrollEvent);
@@ -20,19 +23,28 @@ const Navbar = () => {
 		>
 			<div className='w-full h-[5rem] flex justify-between items-center p-4 md:px-16 lg:max-w-7xl lg:mx-auto'>
 				<div>
-					<h1>PEACE NGO</h1>
+					<h1 className='font-semibold text-2xl'>PEACE NGO</h1>
 				</div>
-				<ul className='hidden lg:flex lg:gap-4'>
-					{NAVBAR_NAVIGATION.map((item) => (
-						<li key={`nav-${item.url}`}>
-							<Link target={item.target} href={item.url}>
-								{item.name}
-							</Link>
-						</li>
-					))}
-				</ul>
-				<div>
-					<Button className='hidden lg:block'>Donate</Button>
+				<div className='hidden lg:flex gap-4 items-center justify-center'>
+					<ul className=' lg:flex lg:gap-4'>
+						{NAVBAR_NAVIGATION.map((item) => (
+							<Button
+								asChild
+								key={`nav-${item.url}`}
+								variant={'ghost'}
+							>
+								<li>
+									<Link target={item.target} href={item.url}>
+										{item.name}
+									</Link>
+								</li>
+							</Button>
+						))}
+					</ul>
+					<Button className=''>
+						Donate{' '}
+						<Heart className='ml-2 h-4 w-4' strokeWidth={1.5} />
+					</Button>
 				</div>
 				<div className='lg:hidden'>
 					<SheetComponent />
