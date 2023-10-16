@@ -4,6 +4,7 @@ import Approach from '@/components/home/Approach';
 import Impact from '@/components/home/Impact';
 import Stories from '@/components/home/Stories';
 import Donate from '@/components/resusable/Donate';
+import Blogs from '@/components/home/Blogs';
 
 export default function Home() {
 	return (
@@ -14,6 +15,7 @@ export default function Home() {
 			<Approach />
 			<Impact />
 			<Stories />
+			<Blogs/>
 		</main>
 	);
 }

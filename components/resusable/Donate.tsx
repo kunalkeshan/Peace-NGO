@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const Donate = () => {
 	return (
-        <section className="bg-white">
+        <section className="">
             <section className="w-full h-full p-4 md:px-16 py-16 lg:py-32 lg:max-w-7xl lg:mx-auto">
                 <div className=" bg-app-primary p-8 md:p-12 lg:p-16 rounded-lg flex flex-col lg:flex-row gap-8">
                     <div className="w-full">
