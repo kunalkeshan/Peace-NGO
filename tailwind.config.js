@@ -23,8 +23,7 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       fontFamily: {
-        heading: ['var(--font-heading)'],
-        body: ['var(--font-body)'],
+        maax: ['var(--font-maax)'],
       },
       colors: {
         border: "hsl(var(--border))",
