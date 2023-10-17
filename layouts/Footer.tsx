@@ -5,12 +5,12 @@ import { Instagram, Linkedin, Mail, Twitter } from 'lucide-react';
 const Footer = () => {
 	return (
 		<footer id='contact' className='bg-[#f6f7fc]'>
-			<div className='mx-auto max-w-[1440px] px-[12px] pt-[72px] pb-[32px] md:px-[20px] lg:px-[5vw]'>
+			<div className='lg:mx-auto lg:max-w-[1440px] p-4 md:px-16'>
 				<div className='flex flex-col items-stretch justify-start'>
 					<div className='w-full border-b p-2 md:p-4'>
 						<div className='flex flex-col items-center justify-between md:items-start lg:flex-row'>
 							<Link href='/' className='flex items-center'>
-								<p className='mb-[40px] leading-none lg:mb-0'>
+								<p className='mb-[40px] leading-none lg:mb-0 font-semibold text-lg md:text-2xl'>
 									<span className='text-app-secondary'>
 										Peace
 									</span>{' '}
@@ -20,17 +20,17 @@ const Footer = () => {
 							<div className='flex w-full flex-col items-center justify-between md:flex-row lg:justify-end'>
 								<div className='mb-4 flex flex-col items-stretch justify-start text-center md:flex-row'>
 									{/* <a className='p-3 text-[14px] md:px-3 md:py-4 lg:mx-3 lg:py-2 '>
-                  How we work
-                </a>
-                <a className='p-3 text-[14px] md:px-3 md:py-4 lg:mx-3 lg:py-2 '>
-                  Services
-                </a>
-                <a className='p-3 text-[14px] md:px-3 md:py-4 lg:mx-3 lg:py-2 '>
-                  Solution
-                </a>
-                <a className='p-3 text-[14px] md:px-3 md:py-4 lg:mx-3 lg:py-2 '>
-                  FAQs
-                </a> */}
+										How we work
+									</a>
+									<a className='p-3 text-[14px] md:px-3 md:py-4 lg:mx-3 lg:py-2 '>
+										Services
+									</a>
+									<a className='p-3 text-[14px] md:px-3 md:py-4 lg:mx-3 lg:py-2 '>
+										Solution
+									</a>
+									<a className='p-3 text-[14px] md:px-3 md:py-4 lg:mx-3 lg:py-2 '>
+										FAQs
+									</a> */}
 								</div>
 								<div className='mb-4 flex items-center justify-start lg:ml-[64px]'>
 									<a
