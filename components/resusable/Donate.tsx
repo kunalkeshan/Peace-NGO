@@ -29,7 +29,7 @@ const Donate = () => {
 							elit. Suspendisse varius enim in eros elementum
 							tristique. Duis cursus, mi quis viverra ornare.
 						</p>
-						<Button className='bg-white text-black lg:w-fit'>
+						<Button className='bg-white hover:bg-slate-200 text-black lg:w-fit'>
 							Donate{' '}
 							<Heart className='ml-2 h-4 w-4' strokeWidth={1.5} />
 						</Button>
