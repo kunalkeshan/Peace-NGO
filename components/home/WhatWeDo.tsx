@@ -1,7 +1,27 @@
-import Image from "next/image";
-import React from "react";
+import Image from 'next/image';
+import React from 'react';
 
 const WhatWeDo = () => {
+        
+        	const CONTENT = [
+		{
+			image: '/images/climate-change.png',
+			title: 'Climate Change',
+		},
+		{
+			image: '/images/women-empowerment.png',
+			title: 'Women Empowerment',
+		},
+		{
+			image: '/images/education.png',
+			title: 'Education',
+		},
+		{
+			image: '/images/health.png',
+			title: 'Health',
+		},
+	];
+        
     return (
         <section className="w-full h-full relative bg-white">
             <Image
@@ -51,66 +71,26 @@ const WhatWeDo = () => {
                     </div>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-2 gap-6 lg:w-1/2 h-fit">
-                    <div className="p-4 flex md:flex-col items-center gap-4 border rounded-lg shadow">
-                        <div className="w-16 h-16 bg-app-primary/50 flex justify-center items-center rounded-full">
-                            <Image
-                                unoptimized
-                                src={
-                                    "https://img.icons8.com/quill/000000/greenhouse-effect.png"
-                                }
-                                alt="icon"
-                                width={50}
-                                height={50}
-                                className="w-12 h-12"
-                            />
-                        </div>
-                        <p className="font-semibold">Climate Change</p>
-                    </div>
-                    <div className="p-4 flex md:flex-col items-center gap-4 border rounded-lg shadow">
-                        <div className="w-16 h-16 bg-app-primary/50 flex justify-center items-center rounded-full">
-                            <Image
-                                unoptimized
-                                src={
-                                    "https://img.icons8.com/quill/50/female.png"
-                                }
-                                alt="icon"
-                                width={50}
-                                height={50}
-                                className="w-12 h-12"
-                            />
-                        </div>
-                        <p className="font-semibold">Women Empowerment</p>
-                    </div>
-                    <div className="p-4 flex md:flex-col items-center gap-4 border rounded-lg shadow">
-                        <div className="w-16 h-16 bg-app-primary/50 flex justify-center items-center rounded-full">
-                            <Image
-                                unoptimized
-                                src={
-                                    "https://img.icons8.com/quill/50/education.png"
-                                }
-                                alt="icon"
-                                width={50}
-                                height={50}
-                                className="w-12 h-12"
-                            />
-                        </div>
-                        <p className="font-semibold">Education</p>
-                    </div>
-                    <div className="p-4 flex md:flex-col items-center gap-4 border rounded-lg shadow">
-                        <div className="w-16 h-16 bg-app-primary/50 flex justify-center items-center rounded-full">
-                            <Image
-                                unoptimized
-                                src={
-                                    "https://img.icons8.com/quill/50/trust.png"
-                                }
-                                alt="icon"
-                                width={50}
-                                height={50}
-                                className="w-12 h-12"
-                            />
-                        </div>
-                        <p className="font-semibold">Health</p>
-                    </div>
+                    <ul className="p-4 flex md:flex-col items-center gap-4 border rounded-lg shadow">
+                      	{CONTENT.map((item, index) => (
+						<li
+							key={`what-we-do-${index}`}
+							className='p-4 flex md:flex-col items-center gap-4 border rounded-lg shadow'
+						>
+							<div className='w-16 h-16 bg-app-primary/50 flex justify-center items-center rounded-full'>
+								<Image
+									unoptimized
+									src={item.image}
+									alt='icon'
+									width={50}
+									height={50}
+									className='w-12 h-12'
+								/>
+							</div>
+							<p className='font-semibold'>{item.title}</p>
+						</li>
+					))}
+                  </ul>
                 </div>
             </div>
         </section>
