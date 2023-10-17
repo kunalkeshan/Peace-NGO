@@ -5,7 +5,7 @@ const Stories = () => {
 	return (
 		<section className='w-full h-full bg-white py-16 lg:py-32'>
 			<div className='h-full flex flex-col items-start gap-8 justify-center p-4 md:px-16 lg:max-w-7xl lg:mx-auto text-center'>
-				<h2 className='text-2xl lg:text-4xl leading-tight mx-auto font-heading'>
+				<h2 className='text-2xl lg:text-4xl leading-tight mx-auto '>
 					Stories
 				</h2>
 				<p className='text-base lg:text-xl text-slate-500'>
@@ -27,7 +27,7 @@ const Stories = () => {
 								<div className='mt-4 rounded-md overflow-hidden bg-white p-4'>
 									<User size={44} strokeWidth={1.5} />
 								</div>
-								<p className='font-medium text-xl font-heading'>
+								<p className='font-medium text-xl '>
 									{story.person}
 								</p>
 								<p className='text-base lg:text-lg text-slate-500'>
