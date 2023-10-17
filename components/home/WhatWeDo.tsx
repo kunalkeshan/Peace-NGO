@@ -77,7 +77,7 @@ const WhatWeDo = () => {
 							key={`what-we-do-${index}`}
 							className='p-4 flex md:flex-col items-center gap-4 border rounded-lg shadow'
 						>
-							<div className='w-16 h-16 bg-app-primary/50 flex justify-center items-center rounded-full'>
+							<div className='w-16 h-16 bg-app-secondary/50 flex justify-center items-center rounded-full'>
 								<Image
 									unoptimized
 									src={item.image}

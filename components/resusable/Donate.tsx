@@ -4,13 +4,13 @@ import Image from 'next/image';
 
 const Donate = () => {
 	return (
-		<section className=''>
-			<section className='w-full h-full p-4 md:px-16 py-16 lg:py-32 lg:max-w-7xl lg:mx-auto'>
-				<div className=' bg-app-primary p-8 md:p-12 lg:p-16 rounded-lg flex flex-col lg:flex-row gap-8'>
+		<section className='bg-white w-full h-full'>
+			<section className='w-full h-full p-4 md:px-16 lg:max-w-7xl lg:mx-auto'>
+				<div className=' bg-app-secondary p-8 md:p-12 lg:p-16 rounded-lg flex flex-col lg:flex-row gap-8'>
 					<div className='w-full'>
 						<Image
 							unoptimized
-							className='rounded-lg w-full'
+							className='rounded-lg object-cover w-full h-full'
 							src='/images/wed.jpg'
 							alt='donate'
 							width={100}
