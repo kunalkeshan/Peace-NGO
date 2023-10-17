@@ -8,14 +8,14 @@ import Blogs from '@/components/home/Blogs';
 
 export default function Home() {
 	return (
-		<main className='bg-app-bg font-heading'>
+		<main className='bg-app-bg '>
 			<Hero />
 			<WhatWeDo />
 			<Donate />
 			<Approach />
 			<Impact />
 			<Stories />
-			<Blogs/>
+			<Blogs />
 		</main>
 	);
 }

@@ -1,20 +1,45 @@
 import './globals.css';
-import { Poppins, Open_Sans } from 'next/font/google';
+import localFont from 'next/font/local';
 
-const heading = Poppins({
-	style: ['italic', 'normal'],
-	subsets: ['latin'],
-	display: 'swap',
-	weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-	variable: '--font-heading',
-});
-
-const body = Open_Sans({
-	style: ['italic', 'normal'],
-	subsets: ['latin'],
-	display: 'swap',
-	weight: ['300', '400', '500', '600', '700', '800'],
-	variable: '--font-body',
+const maax = localFont({
+	src: [
+		{
+			path: '../fonts/maax/Maax.ttf',
+			weight: '400',
+			style: 'normal',
+		},
+		{
+			path: '../fonts/maax/Maax-Medium.ttf',
+			weight: '500',
+			style: 'normal',
+		},
+		{
+			path: '../fonts/maax/Maax-Bold.ttf',
+			weight: '700',
+			style: 'normal',
+		},
+		{
+			path: '../fonts/maax/Maax-Black.ttf',
+			weight: '900',
+			style: 'normal',
+		},
+		{
+			path: '../fonts/maax/Maax-Italic.ttf',
+			weight: '400',
+			style: 'italic',
+		},
+		{
+			path: '../fonts/maax/Maax-Mediumitalic.ttf',
+			weight: '500',
+			style: 'italic',
+		},
+		{
+			path: '../fonts/maax/Maax-BoldItalic.ttf',
+			weight: '700',
+			style: 'italic',
+		},
+	],
+	variable: '--font-maax',
 });
 
 export default function RootLayout({
@@ -24,9 +49,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='en'>
-			<body className={`${heading.variable} ${body.variable} font-body`}>
-				{children}
-			</body>
+			<body className={`${maax.variable} font-maax`}>{children}</body>
 		</html>
 	);
 }
