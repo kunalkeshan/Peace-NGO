@@ -65,7 +65,7 @@ const Impact = () => {
 	return (
 		<section className='h-full flex flex-col items-start gap-8 justify-center p-4 md:px-16 lg:max-w-7xl lg:mx-auto text-center py-16 lg:py-32'>
 			<h2 className='text-2xl lg:text-4xl leading-tight mx-auto'>
-				Impact Created by us
+				<span className='text-app-secondary'>Impact</span> Created by us
 			</h2>
 			<p className='text-base lg:text-lg text-slate-500'>
 				Making a small difference in someone&apos;s life adds meaning to

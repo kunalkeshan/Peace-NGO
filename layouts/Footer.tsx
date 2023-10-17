@@ -11,7 +11,10 @@ const Footer = () => {
 						<div className='flex flex-col items-center justify-between md:items-start lg:flex-row'>
 							<Link href='/' className='flex items-center'>
 								<p className='mb-[40px] leading-none lg:mb-0'>
-									Peace NGO
+									<span className='text-app-secondary'>
+										Peace
+									</span>{' '}
+									NGO
 								</p>
 							</Link>
 							<div className='flex w-full flex-col items-center justify-between md:flex-row lg:justify-end'>
@@ -34,7 +37,7 @@ const Footer = () => {
 										target='_blank'
 										rel='noopener noreferrer'
 										href='https://www.linkedin.com/company/codelance-devs/'
-										className='mx-[2px] p-3 transition-all duration-300 hover:text-[#00E07B]'
+										className='mx-[2px] p-3 transition-all duration-300 hover:text-app-secondary'
 									>
 										<Linkedin />
 									</a>
@@ -42,7 +45,7 @@ const Footer = () => {
 										target='_blank'
 										rel='noopener noreferrer'
 										href='https://twitter.com/CodelanceDevs'
-										className='mx-[2px] p-3 transition-all duration-300 hover:text-[#00E07B]'
+										className='mx-[2px] p-3 transition-all duration-300 hover:text-app-secondary'
 									>
 										<Twitter />
 									</a>
@@ -50,7 +53,7 @@ const Footer = () => {
 										target='_blank'
 										rel='noopener noreferrer'
 										href='https://www.instagram.com/codelancedevs/'
-										className='mx-[2px] p-3 transition-all duration-300 hover:text-[#00E07B]'
+										className='mx-[2px] p-3 transition-all duration-300 hover:text-app-secondary'
 									>
 										<Instagram />
 									</a>
@@ -58,7 +61,7 @@ const Footer = () => {
 										target='_blank'
 										rel='noopener noreferrer'
 										href='mailto:contact@codelancedevs.com'
-										className='mx-[2px] p-3 transition-all duration-300 hover:text-[#00E07B]'
+										className='mx-[2px] p-3 transition-all duration-300 hover:text-app-secondary'
 									>
 										<Mail />
 									</a>

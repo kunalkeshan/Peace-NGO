@@ -11,10 +11,13 @@ import {
 	SheetFooter,
 	SheetTrigger,
 } from '@/components/ui/sheet';
-import { Menu } from 'lucide-react';
+import { Heart, Menu } from 'lucide-react';
 import { NAVBAR_NAVIGATION } from '@/data/navigation';
+import { usePathname } from 'next/navigation';
+import { Button } from '@/components/ui/button';
 
 const SheetComponent = () => {
+	const pathname = usePathname();
 	const [open, setOpen] = useState(false);
 
 	const handleCloseSheet = () => {
@@ -30,24 +33,48 @@ const SheetComponent = () => {
 				side={'top'}
 				className='h-full flex flex-col justify-between'
 			>
-				<SheetHeader>
-					<SheetTitle>Are you sure absolutely sure?</SheetTitle>
+				<SheetHeader className='!text-center'>
+					<SheetTitle className='font-semibold text-lg md:text-2xl'>
+						<span className='text-app-secondary'>PEACE</span> NGO
+					</SheetTitle>
 					<SheetDescription>
-						This action cannot be undone. This will permanently
-						delete your account and remove your data from our
-						servers.
+						Peace within humanity, peace within nature, peace within
+						you.
 					</SheetDescription>
 				</SheetHeader>
-				<ul className=''>
-					{NAVBAR_NAVIGATION.map((item) => (
-						<li key={`nav-sheet-${item.url}`}>
-							<Link target={item.target} href={item.url}>
-								{item.name}
-							</Link>
-						</li>
-					))}
-				</ul>
-				<SheetFooter>address</SheetFooter>
+				<div>
+					<ul className='flex gap-4 flex-col font-heading'>
+						{NAVBAR_NAVIGATION.map((link) => {
+							const isActive = pathname === link.url;
+							return (
+								<li
+									key={`nav-${link.name}`}
+									className='font-medium w-fit'
+									onClick={handleCloseSheet}
+								>
+									<Link
+										href={link.url}
+										target={link.target}
+										className={`${
+											isActive
+												? 'text-primary-clinic'
+												: ''
+										} w-full hover:text-primary-clinic transition-all`}
+									>
+										{link.name}
+									</Link>
+								</li>
+							);
+						})}
+					</ul>
+					<Button className='w-full mt-4'>
+						Donate{' '}
+						<Heart className='ml-2 h-4 w-4' strokeWidth={1.5} />
+					</Button>
+				</div>
+				<SheetFooter className='mt-auto text-xs'>
+					addrress herre addrress herre addrress herre
+				</SheetFooter>
 			</SheetContent>
 		</Sheet>
 	);

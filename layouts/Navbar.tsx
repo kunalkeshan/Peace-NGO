@@ -24,7 +24,7 @@ const Navbar = () => {
 			<div className='w-full h-[5rem] flex justify-between items-center p-4 md:px-16 lg:max-w-7xl lg:mx-auto'>
 				<div>
 					<h1 className='font-semibold text-lg md:text-2xl'>
-						PEACE NGO
+						<span className='text-app-secondary'>PEACE</span> NGO
 					</h1>
 				</div>
 				<div className='hidden lg:flex gap-4 items-center justify-center'>
