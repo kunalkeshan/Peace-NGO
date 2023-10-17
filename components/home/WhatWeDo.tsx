@@ -12,7 +12,7 @@ const WhatWeDo = () => {
 			title: 'Women Empowerment',
 		},
 		{
-			image: '/images/eduction.png',
+			image: '/images/education.png',
 			title: 'Education',
 		},
 		{
