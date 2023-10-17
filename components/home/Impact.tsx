@@ -67,7 +67,7 @@ const Impact = () => {
 			<h2 className='text-2xl lg:text-4xl leading-tight mx-auto'>
 				Impact Created by us
 			</h2>
-			<p className='text-base lg:text-xl text-slate-500'>
+			<p className='text-base lg:text-lg text-slate-500'>
 				Making a small difference in someone&apos;s life adds meaning to
 				every endeavor. Samaritans like you make us successful in our
 				purpose, “Creating a Thriving Tomorrow, One Rural Youth at a

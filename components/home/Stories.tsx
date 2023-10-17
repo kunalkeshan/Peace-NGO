@@ -8,7 +8,7 @@ const Stories = () => {
 				<h2 className='text-2xl lg:text-4xl leading-tight mx-auto '>
 					Stories
 				</h2>
-				<p className='text-base lg:text-xl text-slate-500'>
+				<p className='text-base lg:text-lg text-slate-500'>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 					Suspendisse varius enim in eros elementum tristique. Duis
 					cursus, mi quis viverra ornare
@@ -27,10 +27,10 @@ const Stories = () => {
 								<div className='mt-4 rounded-md overflow-hidden bg-white p-4'>
 									<User size={44} strokeWidth={1.5} />
 								</div>
-								<p className='font-medium text-xl '>
+								<p className='font-medium text-xl'>
 									{story.person}
 								</p>
-								<p className='text-base lg:text-lg text-slate-500'>
+								<p className='text-base text-slate-500'>
 									&quot;{story.story}&quot;
 								</p>
 							</li>
