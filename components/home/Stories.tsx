@@ -64,7 +64,7 @@ const Stories: React.FC<StoriesProps> = ({ stories }) => {
 			<Swiper
 				slidesPerView={'auto'}
 				centeredSlides={true}
-				initialSlide={0}
+				initialSlide={1}
 				spaceBetween={30}
 				grabCursor={true}
 				navigation={true}
