@@ -33,15 +33,7 @@ export default defineType({
 		defineField({
 			name: 'story',
 			title: 'Their Story',
-			type: 'array',
-			of: [
-				{
-					title: 'Block',
-					type: 'block',
-					styles: [{ title: 'Normal', value: 'normal' }],
-					lists: [],
-				},
-			],
+			type: 'text',
 			description: 'The story or review text provided by the person.',
 			validation: (Rule) => Rule.required(),
 		}),

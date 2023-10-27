@@ -14,3 +14,8 @@ export const postQuery = groq`*[_type == "post" && slug.current == $slug][0]{
 export const postPathsQuery = groq`*[_type == "post" && defined(slug.current)][]{
     "params": { "slug": slug.current }
   }`;
+
+// Get all stories
+export const storiesQuery = groq`*[_type == "story"]{
+  name, story, "image": image.asset->url, "alt: image.alt, role, instagram, twitter, linkedin, website, email, youtube
+}`;
