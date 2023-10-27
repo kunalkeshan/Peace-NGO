@@ -49,6 +49,14 @@ export default defineType({
 			validation: (Rule) => Rule.required(),
 		}),
 		defineField({
+			name: 'description',
+			title: 'Description',
+			description:
+				'A 160 characters description to introduce what the blog post is about.',
+			type: 'text',
+			validation: (Rule) => Rule.required().max(160),
+		}),
+		defineField({
 			name: 'image',
 			title: 'Image',
 			type: 'image',
@@ -73,18 +81,10 @@ export default defineType({
 		defineField({
 			name: 'bio',
 			title: 'Bio',
-			type: 'array',
+			type: 'text',
 			group: 'professional',
 			description:
 				'A block of text where you can provide a brief biography or description of the team member.',
-			of: [
-				{
-					title: 'Block',
-					type: 'block',
-					styles: [{ title: 'Normal', value: 'normal' }],
-					lists: [],
-				},
-			],
 			validation: (Rule) => Rule.max(500),
 		}),
 		defineField({

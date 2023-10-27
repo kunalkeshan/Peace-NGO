@@ -27,3 +27,43 @@ type Impact = Readonly<{
 	number: number;
 	description?: string;
 }>;
+
+type TeamMember = Readonly<{
+	_id: string;
+	name: string;
+	slug: string;
+	image: string;
+	alt: string;
+	bio?: string;
+	currentlyWorking: boolean;
+	startDate?: Date;
+	endDate?: Date;
+	role?: string;
+	languages?: string[];
+	instagram?: string;
+	twitter?: string;
+	linkedin?: string;
+	website?: string;
+	email?: string;
+	youtube?: string;
+}>;
+
+type GalleryImage = Readonly<{
+	_id: string;
+	caption: string;
+	image: string;
+	alt: string;
+}>;
+
+type BlogPost = Readonly<{
+	_id: string;
+	title: string;
+	description: string;
+	slug: string;
+	author: TeamMember;
+	image?: string;
+	alt?: string;
+	categories?: string[];
+	publishedAt: Date;
+	body?: string[];
+}>;
