@@ -19,3 +19,8 @@ export const postPathsQuery = groq`*[_type == "post" && defined(slug.current)][]
 export const storiesQuery = groq`*[_type == "story"]{
   _id, name, story, "image": image.asset->url, "alt": image.alt, role, instagram, twitter, linkedin, website, email, youtube
 }`;
+
+// Get all impacts
+export const impactsQuery = groq`*[_type == "impact"]{
+  _id, title, number, description, "category": category->{title, description, "slug": slug.current, _id}
+}`;
