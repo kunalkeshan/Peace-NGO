@@ -1,4 +1,6 @@
+import Founder from "@/components/about/Founder";
 import Hero from "@/components/about/Hero"
+import History from "@/components/about/History";
 import Mission from "@/components/about/Mission";
 import Vision from "@/components/about/Vision";
 
@@ -8,6 +10,8 @@ export default function About() {
             <Hero/>
             <Vision/>
             <Mission/>
+            <History/>
+            <Founder/>
         </main>
     );
 }

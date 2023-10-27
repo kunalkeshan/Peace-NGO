@@ -6,6 +6,7 @@ import SheetComponent from "./Sheet";
 import { NAVBAR_NAVIGATION } from "@/data/navigation";
 import { Button } from "@/components/ui/button";
 import { Heart } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
     const [header, setHeader] = useState("bg-app-bg");
@@ -17,9 +18,12 @@ const Navbar = () => {
     useEffect(() => {
         window.addEventListener("scroll", listenScrollEvent);
     });
+
+    const pathname = usePathname();
+    console.log(pathname);
     return (
         <nav
-            className={`${header} sticky top-0 w-full transition-all duration-300  z-50`}
+            className={`${header} sticky top-0 w-full transition-all duration-300 ${pathname !== "/" && "bg-white"} z-50`}
         >
             <div className="w-full h-[5rem] flex justify-between items-center p-4 md:px-16 lg:max-w-7xl lg:mx-auto">
                 <div>
