@@ -7,7 +7,17 @@ import team from './schemas/team';
 import story from './schemas/story';
 import impact from './schemas/impact';
 import gallery from './schemas/gallery';
+import program from './schemas/program';
 
 export const schema: { types: SchemaTypeDefinition[] } = {
-	types: [post, team, category, blockContent, story, impact, gallery],
+	types: [
+		post,
+		team,
+		category,
+		blockContent,
+		story,
+		impact,
+		gallery,
+		program,
+	],
 };
