@@ -29,3 +29,8 @@ export const impactsQuery = groq`*[_type == "impact"]{
 export const programsQuery = groq`*[_type == "program"]{
   _id, title, description, "image": image.asset->url, "alt": image.alt
 }`;
+
+// Get all gallelry images
+export const galleryImagesQuery = groq`*[_type == "gallery"]{
+  _id, caption, "image": image.asset->url, "alt": image.alt
+}`;
