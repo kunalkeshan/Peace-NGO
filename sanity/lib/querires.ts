@@ -24,3 +24,8 @@ export const storiesQuery = groq`*[_type == "story"]{
 export const impactsQuery = groq`*[_type == "impact"]{
   _id, title, number, description, "category": category->{title, description, "slug": slug.current, _id}
 }`;
+
+// Get all programs
+export const programsQuery = groq`*[_type == "program"]{
+  _id, title, description, "image": image.asset->url, "alt": image.alt
+}`;
