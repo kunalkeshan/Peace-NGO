@@ -35,7 +35,10 @@ const SheetComponent = () => {
 			>
 				<SheetHeader className='!text-center'>
 					<SheetTitle className='font-semibold text-lg md:text-2xl'>
-						<span className='text-app-secondary'>PEACE</span> NGO
+						<Link href={'/'} onClick={handleCloseSheet}>
+							<span className='text-app-secondary'>PEACE</span>{' '}
+							NGO
+						</Link>
 					</SheetTitle>
 					<SheetDescription>
 						Peace within humanity, peace within nature, peace within

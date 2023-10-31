@@ -10,12 +10,15 @@ const Footer = () => {
 					<div className='w-full border-b p-2 md:p-4'>
 						<div className='flex flex-col items-center justify-between md:items-start lg:flex-row'>
 							<Link href='/' className='flex items-center'>
-								<p className='mb-[40px] leading-none lg:mb-0 font-semibold text-lg md:text-2xl'>
+								<Link
+									href={'/'}
+									className='mb-[40px] leading-none lg:mb-0 font-semibold text-lg md:text-2xl'
+								>
 									<span className='text-app-secondary'>
 										Peace
 									</span>{' '}
 									NGO
-								</p>
+								</Link>
 							</Link>
 							<div className='flex w-full flex-col items-center justify-between md:flex-row lg:justify-end'>
 								<div className='mb-4 flex flex-col items-stretch justify-start text-center md:flex-row'>
