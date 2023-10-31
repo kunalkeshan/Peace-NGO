@@ -34,3 +34,13 @@ export const programsQuery = groq`*[_type == "program"]{
 export const galleryImagesQuery = groq`*[_type == "gallery"]{
   _id, caption, "image": image.asset->url, "alt": image.alt
 }`;
+
+// Get parul khanna document
+export const parulKhannaDocument = groq`*[_type == "team" && slug.current == "parul-khanna"][0]{
+  _id, "slug": slug.current, name, "image": image.asset->url, "alt": image.alt, bio, currentlyWorking, startDate, endDate, role, languages, instagram, twitter, linkedin, website, email, youtube, qualifications
+}`;
+
+// Get all team members
+export const teamMembersQuery = groq`*[_type == "team" && slug.current != "parul-khanna"]{
+  _id, "slug": slug.current, name, "image": image.asset->url, "alt": image.alt, bio, currentlyWorking, startDate, endDate, role, languages, instagram, twitter, linkedin, website, email, youtube, qualifications
+}`;

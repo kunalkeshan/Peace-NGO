@@ -34,6 +34,7 @@ type TeamMember = Readonly<{
 	slug: string;
 	image: string;
 	alt: string;
+	qualifications?: string;
 	bio?: string;
 	currentlyWorking: boolean;
 	startDate?: Date;

@@ -49,14 +49,6 @@ export default defineType({
 			validation: (Rule) => Rule.required(),
 		}),
 		defineField({
-			name: 'description',
-			title: 'Description',
-			description:
-				'A 160 characters description to introduce what the blog post is about.',
-			type: 'text',
-			validation: (Rule) => Rule.required().max(160),
-		}),
-		defineField({
 			name: 'image',
 			title: 'Image',
 			type: 'image',
@@ -85,7 +77,7 @@ export default defineType({
 			group: 'professional',
 			description:
 				'A block of text where you can provide a brief biography or description of the team member.',
-			validation: (Rule) => Rule.max(500),
+			validation: (Rule) => Rule.max(1500),
 		}),
 		defineField({
 			name: 'currentlyWorking',
