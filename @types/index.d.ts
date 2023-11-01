@@ -66,7 +66,7 @@ type BlogPost = Readonly<{
 	alt?: string;
 	categories?: string[];
 	publishedAt: Date;
-	body?: string[];
+	body?: TypedObject | TypedObject[];
 }>;
 
 type Program = Readonly<{
