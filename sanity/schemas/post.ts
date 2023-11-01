@@ -26,6 +26,14 @@ export default defineType({
 			},
 		}),
 		defineField({
+			name: 'description',
+			title: 'Description',
+			type: 'text',
+			description:
+				'Enter the description of your post. This is used as an introduction text and will be used to place as the SEO content.',
+			validation: (Rule) => Rule.required().max(500),
+		}),
+		defineField({
 			name: 'author',
 			title: 'Author',
 			type: 'reference',
