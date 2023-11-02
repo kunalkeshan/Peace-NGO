@@ -78,6 +78,14 @@ export default defineType({
 				'Specify the date and time when your post was published. This information is displayed to users and helps them understand when the post was written.',
 		}),
 		defineField({
+			name: 'featured',
+			title: 'Featured?',
+			description:
+				'Featured posts will be shown at the top and in the landing page.',
+			type: 'boolean',
+			initialValue: false,
+		}),
+		defineField({
 			name: 'body',
 			title: 'Body',
 			type: 'blockContent',

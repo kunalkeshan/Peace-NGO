@@ -5,6 +5,11 @@ export const postsQuery = groq`*[_type == "post"]{
     _id, title, "slug": slug.current, "image": mainImage.asset->url, "alt": mainImage.alt, categories[]->{title, "slug": slug.current}, publishedAt, description
   }`;
 
+// Get all featured posts
+export const featuredPostsQuery = groq`*[_type == "post" && featured == true]{
+  _id, title, "slug": slug.current, "image": mainImage.asset->url, "alt": mainImage.alt, categories[]->{title, "slug": slug.current}, publishedAt, description
+}`;
+
 // Get a single post by its slug
 export const postQuery = groq`*[_type == "post" && slug.current == $slug][0]{ 
     _id, "slug": slug.current, title, "image": mainImage.asset->url, "alt": mainImage.alt, body, author, categories[]->{title, "slug": slug.current}, publishedAt, description

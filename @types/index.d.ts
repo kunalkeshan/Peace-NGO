@@ -65,6 +65,7 @@ type BlogPost = Readonly<{
 	image?: string;
 	alt?: string;
 	categories?: Category[];
+	featured: boolean;
 	publishedAt: Date;
 	body?: TypedObject | TypedObject[];
 }>;

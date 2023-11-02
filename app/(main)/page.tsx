@@ -11,12 +11,16 @@ import Stories from '@/components/home/Stories';
 import Donate from '@/components/resusable/Donate';
 import Blogs from '@/components/home/Blogs';
 import { sanityFetch } from '@/sanity/lib/sanityFetch';
-import { impactsQuery, postsQuery, storiesQuery } from '@/sanity/lib/querires';
+import {
+	featuredPostsQuery,
+	impactsQuery,
+	storiesQuery,
+} from '@/sanity/lib/querires';
 
 export default async function Home() {
 	const impacts = await sanityFetch<Impact[]>({ query: impactsQuery });
 	const stories = await sanityFetch<Story[]>({ query: storiesQuery });
-	const posts = await sanityFetch<BlogPost[]>({ query: postsQuery });
+	const posts = await sanityFetch<BlogPost[]>({ query: featuredPostsQuery });
 
 	return (
 		<main className='bg-app-bg '>
