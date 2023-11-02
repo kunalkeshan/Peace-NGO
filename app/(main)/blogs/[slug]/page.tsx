@@ -46,8 +46,27 @@ export default async function Blog({ params }: Props) {
 		redirect('/blogs');
 	}
 	return (
-		<main>
-			<PortableText value={post.body} />
+		<main className='h-full grid grid-cols-1 lg:grid-cols-2 p-4 md:px-16 lg:max-w-9xl gap-8 lg:mx-auto py-16 lg:pb-32'>
+			<section className='flex flex-col gap-4 h-fit lg:sticky lg:top-32 text-center lg:text-left'>
+				{post.image ? (
+					<div className='rounded overflow-hidden'>
+						<Image
+							src={post.image}
+							alt={post.alt || ''}
+							width={100}
+							height={100}
+							className='w-full h-auto object-cover aspect-video'
+							unoptimized
+						/>
+					</div>
+				) : null}
+				<h1 className='text-4xl font-medium'>{post.title}</h1>
+				<h2 className='text-xl'>{post.description}</h2>
+				{/* Add Author & Pulication Date Information Here */}
+			</section>
+			<section className='h-[200vh]'>
+				<PortableText value={post.body} />
+			</section>
 		</main>
 	);
 }

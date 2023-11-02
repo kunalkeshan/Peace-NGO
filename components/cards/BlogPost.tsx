@@ -20,7 +20,7 @@ const BlogPostCard: React.FC<BlogPostProps> = ({ post }) => {
 						unoptimized
 					/>
 					<div className='absolute transition-all duration-300 top-full group-hover:top-0 left-0 flex items-center justify-center text-lg w-full h-full bg-black/40 z-10 text-white'>
-						Read more...
+						Read more
 					</div>
 				</div>
 				<div className='flex flex-col'>
