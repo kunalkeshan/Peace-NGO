@@ -2,13 +2,13 @@ import { groq } from 'next-sanity';
 
 // Get all posts
 export const postsQuery = groq`*[_type == "post"]{
-    _id, title, "slug": slug.current, "image": mainImage.asset->url, "alt": mainImage.alt, categories[]->{title, "slug": slug.current}, publishedAt, description
-  }`;
+    _id, title, "slug": slug.current, "image": mainImage.asset->url, "alt": mainImage.alt, categories[]->{title, "slug": slug.current}, publishedAt, description, author->
+  } | order(publishedAt desc) | order(featured asc)`;
 
 // Get all featured posts
 export const featuredPostsQuery = groq`*[_type == "post" && featured == true]{
-  _id, title, "slug": slug.current, "image": mainImage.asset->url, "alt": mainImage.alt, categories[]->{title, "slug": slug.current}, publishedAt, description
-}`;
+  _id, title, "slug": slug.current, "image": mainImage.asset->url, "alt": mainImage.alt, categories[]->{title, "slug": slug.current}, description, publishedAt, author->
+} | order(publishedAt desc)`;
 
 // Get a single post by its slug
 export const postQuery = groq`*[_type == "post" && slug.current == $slug][0]{ 
