@@ -12,7 +12,7 @@ export const featuredPostsQuery = groq`*[_type == "post" && featured == true]{
 
 // Get a single post by its slug
 export const postQuery = groq`*[_type == "post" && slug.current == $slug][0]{ 
-    _id, "slug": slug.current, title, "image": mainImage.asset->url, "alt": mainImage.alt, body, author, categories[]->{title, "slug": slug.current}, publishedAt, description
+    _id, "slug": slug.current, title, "image": mainImage.asset->url, "alt": mainImage.alt, body, author->{"image": image.asset->url, "alt": image.alt, name, "slug": slug.current}, categories[]->{title, "slug": slug.current}, publishedAt, description
   }`;
 
 // Get all post slugs

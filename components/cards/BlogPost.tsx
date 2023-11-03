@@ -24,24 +24,7 @@ const BlogPostCard: React.FC<BlogPostProps> = ({ post }) => {
 					</div>
 				</div>
 				<div className='flex flex-col'>
-					<div className='flex justify-between w-full'>
-						<div>
-							<h3 className='text-xl font-semibold'>
-								{post.title}
-							</h3>
-							{post.author ? (
-								<p className='text-sm'>by {post.author.name}</p>
-							) : null}
-						</div>
-						<div>
-							<p>
-								{new Intl.DateTimeFormat('en-US', {
-									dateStyle: 'medium',
-								}).format(new Date(post.publishedAt))}
-							</p>
-							<p className='text-xs text-right'>Published</p>
-						</div>
-					</div>
+					<CardHeader {...post} />
 					<p className='text-base text-slate-500 mt-2 text-justify'>
 						{post.description.slice(0, 120) + '...'}
 					</p>
@@ -60,11 +43,39 @@ const BlogPostCard: React.FC<BlogPostProps> = ({ post }) => {
 export default BlogPostCard;
 
 interface BlogSubComponentProps {
+	CardHeaderProps: React.ComponentProps<'div'> & {
+		title: BlogPost['title'];
+		author: BlogPost['author'];
+		publishedAt: BlogPost['publishedAt'];
+	};
 	CategoryChipsProps: React.ComponentProps<'ul'> & {
 		categories: BlogPost['categories'];
 		postId: BlogPost['_id'];
 	};
 }
+
+const CardHeader: React.FC<BlogSubComponentProps['CardHeaderProps']> = ({
+	title,
+	author,
+	publishedAt,
+}) => {
+	return (
+		<div className='flex justify-between w-full'>
+			<div>
+				<h3 className='text-xl font-semibold'>{title}</h3>
+				{author ? <p className='text-sm'>by {author.name}</p> : null}
+			</div>
+			<div className='min-w-fit'>
+				<p>
+					{new Intl.DateTimeFormat('en-US', {
+						dateStyle: 'medium',
+					}).format(new Date(publishedAt))}
+				</p>
+				<p className='text-xs text-right'>Published</p>
+			</div>
+		</div>
+	);
+};
 
 const CateogryChips: React.FC<BlogSubComponentProps['CategoryChipsProps']> = ({
 	categories,
