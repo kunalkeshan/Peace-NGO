@@ -37,7 +37,7 @@ const Founder: React.FC<FounderProps> = ({ founder }) => {
 		{ Icon: Mail, url: founder.email ? `mailto:${founder.email}` : null },
 	]);
 	return (
-		<section className='min-h-[calc(100vh-5rem)] flex flex-col lg:flex-row items-center gap-8 justify-center'>
+		<section className='min-h-[calc(100vh-5rem)] w-full flex flex-col lg:flex-row-reverse items-center gap-8 justify-between'>
 			<div className='flex flex-col gap-4 lg:gap-8 lg:w-1/2'>
 				<div className='relative'>
 					<h2 className='text-4xl md:text-5xl lg:text-6xl leading-tight'>
@@ -59,7 +59,7 @@ const Founder: React.FC<FounderProps> = ({ founder }) => {
 					))}
 				</ul>
 			</div>
-			<div className='lg:w-1/2 h-full flex items-center justify-end'>
+			<div className='lg:w-1/2 h-full flex items-center justify-start'>
 				<div className='lg:w-3/4'>
 					<Image
 						src={founder?.image}
