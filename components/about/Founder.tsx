@@ -41,7 +41,10 @@ const Founder: React.FC<FounderProps> = ({ founder }) => {
 			<div className='flex flex-col gap-4 lg:gap-8 lg:w-1/2'>
 				<div className='relative'>
 					<h2 className='text-4xl md:text-5xl lg:text-6xl leading-tight'>
-						{founder?.role || 'Founder & CEO'}
+						<p className='text-2xl md:text-3xl lg:text-4xl'>
+							{founder?.role || 'Founder & CEO'}
+						</p>
+						<p>{founder.name}</p>
 					</h2>
 				</div>
 				<div>
