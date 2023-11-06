@@ -20,6 +20,11 @@ const COMMON_NAVIGATION: NavdataCollection = [
 		target: '_self',
 	},
 	{
+		name: 'Programs',
+		url: '/programs',
+		target: '_self',
+	},
+	{
 		name: 'Gallery',
 		url: '/gallery',
 		target: '_self',
