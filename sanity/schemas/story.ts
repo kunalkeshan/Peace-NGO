@@ -1,11 +1,3 @@
-import {
-	Globe,
-	Instagram,
-	Linkedin,
-	Mail,
-	Twitter,
-	Youtube,
-} from 'lucide-react';
 import { defineField, defineType } from 'sanity';
 
 export default defineType({
@@ -69,7 +61,6 @@ export default defineType({
 			name: 'instagram',
 			title: 'Instagram Profile',
 			type: 'url',
-			icon: Instagram,
 			group: 'social',
 			description: 'The individuals Instagram profile URL.',
 		}),
@@ -77,7 +68,6 @@ export default defineType({
 			name: 'twitter',
 			title: 'Twitter Profile',
 			type: 'url',
-			icon: Twitter,
 			group: 'social',
 			description: 'The individuals Twitter profile URL.',
 		}),
@@ -85,7 +75,6 @@ export default defineType({
 			name: 'linkedin',
 			title: 'LinkedIn Profile',
 			type: 'url',
-			icon: Linkedin,
 			group: 'social',
 			description: 'The individuals LinkedIn profile URL.',
 		}),
@@ -93,7 +82,6 @@ export default defineType({
 			name: 'website',
 			title: 'Website',
 			type: 'url',
-			icon: Globe,
 			group: 'social',
 			description:
 				'The individuals personal or professional website URL.',
@@ -102,7 +90,6 @@ export default defineType({
 			name: 'email',
 			title: 'Email',
 			type: 'string',
-			icon: Mail,
 			group: 'social',
 			description: 'The individuals contact email address.',
 		}),
@@ -110,7 +97,6 @@ export default defineType({
 			name: 'youtube',
 			title: 'YouTube',
 			type: 'url',
-			icon: Youtube,
 			group: 'social',
 			description: 'The individuals YouTube channel URL.',
 		}),
