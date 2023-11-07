@@ -19,7 +19,7 @@ const StoryCard: React.FC<StoryCardProps> = ({ story }) => {
 				/>
 			</div>
 			<p className='font-medium text-xl '>{story.name}</p>
-			<p className='text-base text-slate-500'>
+			<p className='text-base text-justify text-slate-500'>
 				&quot;{story.story}&quot;
 			</p>
 		</div>

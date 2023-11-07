@@ -80,7 +80,7 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member }) => {
 						<TooltipTrigger className='mt-2'>
 							{member.bio.slice(0, 120) + '...'}
 						</TooltipTrigger>
-						<TooltipContent className='max-w-xs'>
+						<TooltipContent className='max-w-xs text-justify !p-4'>
 							{member.bio}
 						</TooltipContent>
 					</Tooltip>
