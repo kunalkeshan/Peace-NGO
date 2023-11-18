@@ -4,7 +4,7 @@ import { ArrowRightCircle } from 'lucide-react';
 
 const Hero = () => {
 	return (
-		<section className='min-h-[calc(100vh-5rem)] flex flex-col lg:flex-row items-center gap-8 justify-center p-4 md:px-16 lg:max-w-7xl lg:mx-auto'>
+		<section className='min-h-[calc(100vh-5rem)] flex flex-col lg:flex-row items-center gap-8 justify-center p-4 md:px-16 lg:max-w-7xl lg:mx-auto py-8 md:py-12 lg:py-16'>
 			<div className='flex flex-col gap-4 lg:gap-8 lg:w-1/2'>
 				<div className='relative'>
 					<h1 className='text-4xl md:text-5xl lg:text-6xl leading-tight'>

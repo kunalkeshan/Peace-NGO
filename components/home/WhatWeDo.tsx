@@ -31,7 +31,7 @@ const WhatWeDo = () => {
 				className='w-12 lg:w-16 object-contain right-8 lg:right-12 xl:right-32 top-12 absolute h-auto'
 				alt={'star2'}
 			/>
-			<div className='py-16 lg:py-32 flex flex-col justify-center lg:flex-row gap-6 p-4 md:px-16 lg:max-w-7xl lg:mx-auto'>
+			<div className='py-8 md:py-12 lg:py-16 flex flex-col justify-center lg:flex-row gap-6 p-4 md:px-16 lg:max-w-7xl lg:mx-auto'>
 				<div className='flex flex-col gap-4 lg:w-1/2'>
 					<h2 className='text-2xl lg:text-4xl'>
 						<span className='text-app-secondary'>What</span> we do

@@ -7,7 +7,7 @@ type ImpactProps = React.ComponentProps<'section'> & {
 
 const ImpactCreated: React.FC<ImpactProps> = ({ impacts }) => {
 	return (
-		<section className='h-full flex flex-col items-start gap-8 justify-center p-4 md:px-16 lg:max-w-7xl lg:mx-auto text-center py-16 lg:py-32'>
+		<section className='h-full flex flex-col items-start gap-8 justify-center p-4 md:px-16 lg:max-w-7xl lg:mx-auto text-center py-8 md:py-12 lg:py-16'>
 			<h2 className='text-2xl lg:text-4xl leading-tight mx-auto'>
 				<span className='text-app-secondary'>Impact</span> Created by us
 			</h2>

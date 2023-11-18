@@ -16,7 +16,7 @@ type StoriesProps = React.ComponentProps<'section'> & {
 
 const Stories: React.FC<StoriesProps> = ({ stories }) => {
 	return (
-		<section className='w-full h-full bg-white py-16 lg:py-32 relative'>
+		<section className='w-full h-full bg-white py-8 md:py-12 lg:py-16 relative'>
 			<Image
 				src={'/doodles/flower.svg'}
 				unoptimized

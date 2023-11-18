@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const Approach = () => {
 	return (
-		<section className='w-full h-full bg-white py-16 lg:py-32'>
+		<section className='w-full h-full bg-white py-8 md:py-12 lg:py-16'>
 			<div className='h-full flex flex-col-reverse lg:flex-row-reverse items-start gap-8 justify-center p-4 md:px-16 lg:max-w-7xl lg:mx-auto'>
 				<div className='flex flex-col gap-4 lg:gap-8 lg:w-1/2'>
 					<h2 className='text-2xl lg:text-4xl leading-tight'>
