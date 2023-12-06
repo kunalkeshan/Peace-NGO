@@ -29,6 +29,11 @@ const COMMON_NAVIGATION: NavdataCollection = [
 		url: '/gallery',
 		target: '_self',
 	},
+	{
+		name: 'Blog',
+		url: '/blogs',
+		target: '_self',
+	},
 ];
 
 export const NAVBAR_NAVIGATION = [...COMMON_NAVIGATION];
@@ -37,12 +42,12 @@ export const FOOTER_NAVIGATION = [
 	...COMMON_NAVIGATION,
 	{
 		name: 'Terms & Conditions',
-		url: '/terms-and-conditions',
+		url: '/terms',
 		target: '_self',
 	},
 	{
 		name: 'Privacy Policy',
-		url: '/privacy-policy',
+		url: '/privacy',
 		target: '_self',
 	},
 ];
