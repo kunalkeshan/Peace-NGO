@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Instagram, Linkedin, Mail, Twitter } from 'lucide-react';
 import { FOOTER_NAVIGATION } from '@/data/navigation';
+import { PEACE_NGO_SOCIALS } from '@/data/ngo';
 
 const Footer = () => {
 	return (
@@ -22,38 +23,18 @@ const Footer = () => {
 							</Link>
 							<div className='flex w-full flex-col items-center justify-between md:flex-row lg:justify-end'>
 								<div className='mb-4 flex items-center justify-start lg:ml-[64px]'>
-									<a
-										target='_blank'
-										rel='noopener noreferrer'
-										href='https://www.linkedin.com/company/codelance-devs/'
-										className='mx-[2px] p-3 transition-all duration-300 hover:text-app-secondary'
-									>
-										<Linkedin />
-									</a>
-									<a
-										target='_blank'
-										rel='noopener noreferrer'
-										href='https://twitter.com/CodelanceDevs'
-										className='mx-[2px] p-3 transition-all duration-300 hover:text-app-secondary'
-									>
-										<Twitter />
-									</a>
-									<a
-										target='_blank'
-										rel='noopener noreferrer'
-										href='https://www.instagram.com/codelancedevs/'
-										className='mx-[2px] p-3 transition-all duration-300 hover:text-app-secondary'
-									>
-										<Instagram />
-									</a>
-									<a
-										target='_blank'
-										rel='noopener noreferrer'
-										href='mailto:contact@codelancedevs.com'
-										className='mx-[2px] p-3 transition-all duration-300 hover:text-app-secondary'
-									>
-										<Mail />
-									</a>
+									{PEACE_NGO_SOCIALS.map((social) => (
+										<Link
+											key={`footer-social-${social.name}`}
+											target='_blank'
+											rel='noopener noreferrer'
+											href={social.url}
+											title={social.name}
+											className='mx-[2px] p-3 transition-all duration-300 hover:text-app-secondary'
+										>
+											<social.Icon />
+										</Link>
+									))}
 								</div>
 							</div>
 						</div>

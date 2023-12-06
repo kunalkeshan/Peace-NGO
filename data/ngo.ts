@@ -11,7 +11,7 @@ type SocialsList = ReadonlyArray<{
 
 export const PEACE_NGO_EMAIL = '' as const;
 
-export const TPH_SOCIALS: SocialsList = [
+export const PEACE_NGO_SOCIALS: SocialsList = [
 	{
 		name: 'Instagram',
 		url: 'https://www.instagram.com/',
