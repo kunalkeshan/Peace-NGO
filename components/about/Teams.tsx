@@ -6,7 +6,7 @@ type TeamsProps = React.ComponentProps<'section'> & {
 };
 
 const Teams: React.FC<TeamsProps> = ({ teamMembers }) => {
-	return (
+	return teamMembers.length > 0 ? (
 		<section className='w-full h-full bg-white py-12 md:py-16'>
 			<div className=''>
 				<h2 className='text-4xl md:text-5xl lg:text-6xl leading-tight capitalize'>
@@ -22,7 +22,7 @@ const Teams: React.FC<TeamsProps> = ({ teamMembers }) => {
 				</div>
 			</div>
 		</section>
-	);
+	) : null;
 };
 
 export default Teams;
