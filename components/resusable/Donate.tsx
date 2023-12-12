@@ -21,7 +21,7 @@ const Donate = () => {
 							Introducing you Peace NGO
 						</p>
 						<h2 className='text-4xl'>
-							We create amazing digital products
+							Our mission is to help all the people in need
 						</h2>
 						<p className='text-base lg:text-lg'>
 							Lorem ipsum dolor sit amet, consectetur adipiscing
