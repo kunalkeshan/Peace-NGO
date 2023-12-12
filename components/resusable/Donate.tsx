@@ -1,6 +1,5 @@
-import { Button } from '@/components/ui/button';
-import { Heart } from 'lucide-react';
 import Image from 'next/image';
+import DonateButton from './DonateButton';
 
 const Donate = () => {
 	return (
@@ -22,17 +21,14 @@ const Donate = () => {
 							Introducing you Peace NGO
 						</p>
 						<h2 className='text-4xl'>
-							We create amazing digital products
+							Our mission is to help all the people in need
 						</h2>
 						<p className='text-base lg:text-lg'>
 							Lorem ipsum dolor sit amet, consectetur adipiscing
 							elit. Suspendisse varius enim in eros elementum
 							tristique. Duis cursus, mi quis viverra ornare.
 						</p>
-						<Button className='bg-white hover:bg-slate-200 text-black lg:w-fit'>
-							Donate{' '}
-							<Heart className='ml-2 h-4 w-4' strokeWidth={1.5} />
-						</Button>
+						<DonateButton className='bg-white hover:bg-slate-200 text-black lg:w-fit' />
 					</div>
 				</div>
 			</section>

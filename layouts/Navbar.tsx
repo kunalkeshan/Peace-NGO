@@ -7,6 +7,7 @@ import { NAVBAR_NAVIGATION } from '@/data/navigation';
 import { Button } from '@/components/ui/button';
 import { Heart } from 'lucide-react';
 import { usePathname } from 'next/navigation';
+import DonateButton from '@/components/resusable/DonateButton';
 
 const Navbar = () => {
 	const [header, setHeader] = useState('bg-app-bg');
@@ -49,10 +50,7 @@ const Navbar = () => {
 							</Button>
 						))}
 					</div>
-					<Button className=''>
-						Donate{' '}
-						<Heart className='ml-2 h-4 w-4' strokeWidth={1.5} />
-					</Button>
+					<DonateButton />
 				</div>
 				<div className='lg:hidden'>
 					<SheetComponent />

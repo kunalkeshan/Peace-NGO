@@ -1,9 +1,9 @@
 import React from 'react';
-import { Button } from '../ui/button';
+import DonateButton from '../resusable/DonateButton';
 
 const Hero = () => {
 	return (
-		<section className='text-center py-12 md:py-8 md:py-12 lg:py-16 flex flex-col items-center gap-8'>
+		<section className='text-center py-8 md:py-12 lg:py-16 flex flex-col items-center gap-8'>
 			<h2 className='font-semibold text-app-secondary text-xl'>
 				Learn more About Us
 			</h2>
@@ -18,7 +18,7 @@ const Hero = () => {
 				resilient, educated, and healthy rural areas where
 				sustainability and peace coexist together.
 			</p>
-			<Button className='w-fit'>Donate</Button>
+			<DonateButton />
 		</section>
 	);
 };
