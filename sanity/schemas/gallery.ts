@@ -11,7 +11,6 @@ export default defineType({
 			type: 'string',
 			description:
 				'A brief caption or description for the gallery image.',
-			validation: (Rule) => Rule.required(),
 		}),
 		defineField({
 			name: 'image',

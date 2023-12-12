@@ -25,7 +25,7 @@ const Mission = () => {
         <section className="w-full h-full relative bg-white">
             <div className="py-12 md:py-16 text-center flex flex-col justify-center items-center gap-6">
                 <div className="flex flex-col gap-4">
-                    <h2 className="text-2xl lg:text-4xl font-medium">
+                    <h2 className="text-2xl lg:text-4xl">
                         <span className="text-app-secondary">Mission</span>
                     </h2>
                     <p className="text-base lg:text-lg text-slate-500">
