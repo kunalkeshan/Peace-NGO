@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import Link from 'next/link';
 import {
@@ -9,7 +11,7 @@ import {
 	DialogTrigger,
 } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
-import { Heart, Phone, Mail } from 'lucide-react';
+import { Heart, Phone, Mail, LucideIcon } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import {
 	PEACE_NGO_ADDRESS,
@@ -18,16 +20,35 @@ import {
 	PEACE_NGO_SOCIALS,
 } from '@/data/ngo';
 
-type DonateButtonProps = React.ComponentPropsWithRef<'button'>;
+type DonateButtonProps = React.ComponentPropsWithRef<'button'> & {
+	textCta?: string;
+	Icon?: LucideIcon;
+	iconClassName?: string;
+};
 
-const DonateButton: React.FC<DonateButtonProps> = ({ className, ...props }) => {
+const donateButtonDefaultProps = {
+	textCta: 'Donate',
+	Icon: Heart,
+	iconClassName: 'ml-2 h-4 w-4 text-inherit',
+};
+
+const DonateButton: React.FC<DonateButtonProps> = ({
+	textCta = donateButtonDefaultProps.textCta,
+	Icon = donateButtonDefaultProps.Icon,
+	iconClassName = donateButtonDefaultProps.iconClassName,
+	className,
+	...props
+}) => {
 	return (
 		<Dialog>
 			<DialogTrigger asChild>
 				<Button className={cn(className)} {...props}>
-					Donate{' '}
-					<Heart
-						className='ml-2 h-4 w-4 text-inherit'
+					{textCta}{' '}
+					<Icon
+						className={cn(
+							'ml-2 h-4 w-4 text-inherit',
+							iconClassName
+						)}
 						strokeWidth={1.5}
 					/>
 				</Button>
@@ -73,3 +94,5 @@ const DonateButton: React.FC<DonateButtonProps> = ({ className, ...props }) => {
 };
 
 export default DonateButton;
+
+DonateButton.defaultProps = donateButtonDefaultProps;

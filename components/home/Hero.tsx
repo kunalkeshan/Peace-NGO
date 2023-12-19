@@ -1,6 +1,5 @@
 import Image from 'next/image';
-import { Button } from '../ui/button';
-import { ArrowRightCircle } from 'lucide-react';
+import HeroCTA from './HeroCTA';
 
 const Hero = () => {
 	return (
@@ -33,15 +32,9 @@ const Hero = () => {
 						successful in our purpose, “Creating a Thriving
 						Tomorrow, One Rural Youth at a Time”
 					</p>
+					<HeroCTA />
 				</div>
 				<div className='relative'>
-					<Button className='lg:w-fit group'>
-						Yes, I want to contribute{' '}
-						<ArrowRightCircle
-							className='ml-2 h-5 w-5 group-hover:ml-3 transition-all duration-300'
-							strokeWidth={1.5}
-						/>
-					</Button>
 					<Image
 						src={'/doodles/heart.svg'}
 						unoptimized
