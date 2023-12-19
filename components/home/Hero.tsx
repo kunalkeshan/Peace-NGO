@@ -34,27 +34,25 @@ const Hero = () => {
 					</p>
 					<HeroCTA />
 				</div>
-				<div className='relative'>
-					<Image
-						src={'/doodles/heart.svg'}
-						unoptimized
-						width={100}
-						height={100}
-						className='w-20 object-contain absolute -bottom-28 left-0 md:-left-10 h-auto'
-						alt={''}
-					/>
-				</div>
 			</div>
 			<div className='lg:w-1/2 h-full flex items-center justify-end'>
 				<div className='lg:w-3/4'>
-					<Image
-						src={'/images/hero.jpg'}
-						unoptimized
-						width={100}
-						height={400}
-						className='w-full rounded-lg object-contain h-auto'
-						alt={'hero image'}
-					/>
+					<video
+						className=' h-full aspect-video w-full object-cover'
+						autoPlay={true}
+						muted
+						loop
+					>
+						<source src='/test.mp4' type='video/mp4' />
+					</video>
+					{/* <Image
+                        src={"/images/hero.jpg"}
+                        unoptimized
+                        width={100}
+                        height={400}
+                        className="w-full rounded-lg object-contain h-auto"
+                        alt={"hero image"}
+                    /> */}
 				</div>
 			</div>
 		</section>
