@@ -94,5 +94,3 @@ const DonateButton: React.FC<DonateButtonProps> = ({
 };
 
 export default DonateButton;
-
-DonateButton.defaultProps = donateButtonDefaultProps;
