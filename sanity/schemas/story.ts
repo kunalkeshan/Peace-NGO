@@ -34,7 +34,6 @@ export default defineType({
 			title: 'Image',
 			type: 'image',
 			description: 'An image of the person providing the testimonial.',
-			validation: (Rule) => Rule.required(),
 			options: {
 				hotspot: true,
 			},

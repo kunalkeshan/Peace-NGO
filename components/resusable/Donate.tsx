@@ -10,7 +10,7 @@ const Donate = () => {
 						<Image
 							unoptimized
 							className='rounded-lg object-cover w-full h-full'
-							src='/images/wed.jpg'
+							src='/images/donate.jpg'
 							alt='donate'
 							width={100}
 							height={100}

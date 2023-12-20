@@ -37,22 +37,14 @@ const Hero = () => {
 			</div>
 			<div className='lg:w-1/2 h-full flex items-center justify-end'>
 				<div className='lg:w-3/4'>
-					<video
-						className=' h-full aspect-video w-full object-cover'
-						autoPlay={true}
-						muted
-						loop
-					>
-						<source src='/test.mp4' type='video/mp4' />
-					</video>
-					{/* <Image
-                        src={"/images/hero.jpg"}
-                        unoptimized
-                        width={100}
-                        height={400}
-                        className="w-full rounded-lg object-contain h-auto"
-                        alt={"hero image"}
-                    /> */}
+					<Image
+						src={'/images/hero.jpg'}
+						unoptimized
+						width={100}
+						height={400}
+						className='w-full rounded-lg object-contain h-auto'
+						alt={'hero image'}
+					/>
 				</div>
 			</div>
 		</section>

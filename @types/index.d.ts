@@ -8,7 +8,7 @@ type Category = Readonly<{
 type Story = Readonly<{
 	_id: string;
 	name: string;
-	image: string;
+	image?: string;
 	alt?: string;
 	story: string;
 	role?: string;
