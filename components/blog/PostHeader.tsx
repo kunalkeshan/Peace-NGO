@@ -1,6 +1,11 @@
+/**
+ * Blog Post Header
+ */
+
+// Dependencies
 import React from 'react';
 import Image from 'next/image';
-import { Book } from 'lucide-react';
+import ReadTime from './ReadTime';
 
 type HeaderProps = React.ComponentProps<'header'> & {
 	title: BlogPost['title'];
@@ -9,7 +14,7 @@ type HeaderProps = React.ComponentProps<'header'> & {
 	alt?: BlogPost['alt'];
 	author: BlogPost['author'];
 	publishedAt: BlogPost['publishedAt'];
-	readingTime: number;
+	body?: BlogPost['body'];
 };
 
 const PostHeader: React.FC<HeaderProps> = ({
@@ -19,7 +24,7 @@ const PostHeader: React.FC<HeaderProps> = ({
 	description,
 	author,
 	publishedAt,
-	readingTime,
+	body,
 }) => {
 	return (
 		<header className='flex flex-col gap-4 h-fit lg:sticky lg:top-36 text-center lg:text-left'>
@@ -65,9 +70,7 @@ const PostHeader: React.FC<HeaderProps> = ({
 					</div>
 				) : null}
 				<div>•</div>
-				<div className='flex gap-2'>
-					<Book /> <span>{readingTime} min read</span>
-				</div>
+				<ReadTime body={body} />
 			</section>
 		</header>
 	);
