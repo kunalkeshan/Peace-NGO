@@ -1,3 +1,8 @@
+/**
+ * Home Page - Blogs List Component
+ */
+
+// Dependencies
 import React from 'react';
 import BlogPostCard from '../cards/BlogPost';
 

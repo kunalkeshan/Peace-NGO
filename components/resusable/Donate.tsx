@@ -1,3 +1,8 @@
+/**
+ * Donate Component
+ */
+
+// Dependencies
 import Image from 'next/image';
 import DonateButton from './DonateButton';
 

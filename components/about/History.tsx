@@ -1,3 +1,8 @@
+/**
+ * About Page - History Component
+ */
+
+// Dependencies
 import Image from 'next/image';
 
 const History = () => {

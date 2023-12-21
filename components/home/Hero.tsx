@@ -1,3 +1,8 @@
+/**
+ * Home Page - Hero Component
+ */
+
+// Dependencies
 import Image from 'next/image';
 import HeroCTA from './HeroCTA';
 

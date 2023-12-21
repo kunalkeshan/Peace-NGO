@@ -30,7 +30,7 @@ const COMMON_NAVIGATION: NavdataCollection = [
 		target: '_self',
 	},
 	{
-		name: 'Blog',
+		name: 'Blogs',
 		url: '/blogs',
 		target: '_self',
 	},

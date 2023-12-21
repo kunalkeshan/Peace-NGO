@@ -1,11 +1,15 @@
+/**
+ * Navbar Component
+ */
+
 'use client';
 
+// Dependencies
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import SheetComponent from './Sheet';
 import { NAVBAR_NAVIGATION } from '@/data/navigation';
 import { Button } from '@/components/ui/button';
-import { Heart } from 'lucide-react';
 import { usePathname } from 'next/navigation';
 import DonateButton from '@/components/resusable/DonateButton';
 

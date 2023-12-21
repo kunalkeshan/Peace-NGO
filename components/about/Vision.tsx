@@ -1,3 +1,8 @@
+/**
+ * About Page - Vision Component
+ */
+
+// Dependencies
 import Image from 'next/image';
 
 const Vision = () => {

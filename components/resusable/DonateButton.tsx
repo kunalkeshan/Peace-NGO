@@ -1,5 +1,10 @@
+/**
+ * Donate Button Component
+ */
+
 'use client';
 
+// Dependencies
 import React from 'react';
 import Link from 'next/link';
 import {

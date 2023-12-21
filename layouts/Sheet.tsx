@@ -1,5 +1,10 @@
+/**
+ * Sheet Menu Component
+ */
+
 'use client';
 
+// Dependencies
 import React, { useState } from 'react';
 import Link from 'next/link';
 import {
@@ -11,10 +16,10 @@ import {
 	SheetFooter,
 	SheetTrigger,
 } from '@/components/ui/sheet';
-import { Heart, Menu } from 'lucide-react';
-import { NAVBAR_NAVIGATION } from '@/data/navigation';
+import { Menu } from 'lucide-react';
 import { usePathname } from 'next/navigation';
-import { Button } from '@/components/ui/button';
+import DonateButton from '@/components/resusable/DonateButton';
+import { NAVBAR_NAVIGATION } from '@/data/navigation';
 
 const SheetComponent = () => {
 	const pathname = usePathname();
@@ -70,10 +75,7 @@ const SheetComponent = () => {
 							);
 						})}
 					</ul>
-					<Button className='w-full mt-4'>
-						Donate{' '}
-						<Heart className='ml-2 h-4 w-4' strokeWidth={1.5} />
-					</Button>
+					<DonateButton className='mt-4 w-full' />
 				</div>
 				<SheetFooter className='mt-auto text-xs'>
 					addrress herre addrress herre addrress herre

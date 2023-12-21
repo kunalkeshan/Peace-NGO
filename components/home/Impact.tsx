@@ -1,3 +1,8 @@
+/**
+ * Home Page - Impact Component
+ */
+
+// Dependencies
 import React from 'react';
 import ImpactCard from '../cards/ImpactCard';
 

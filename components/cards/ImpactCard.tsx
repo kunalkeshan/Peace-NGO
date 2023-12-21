@@ -1,3 +1,8 @@
+/**
+ * Impact Card Component
+ */
+
+// Dependencies
 import React from 'react';
 import Counter from '../resusable/Counter';
 
