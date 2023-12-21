@@ -4,6 +4,7 @@ import { sanityFetch } from '@/sanity/lib/sanityFetch';
 import { Metadata, ResolvingMetadata } from 'next';
 import { redirect } from 'next/navigation';
 import Post from '@/components/blog/Post';
+import { PEACE_NGO_URL } from '@/data/ngo';
 
 type Props = {
 	params: { slug: string };
@@ -28,6 +29,7 @@ export async function generateMetadata(
 			type: 'website',
 			title: `${post.title} | Peace NGO`,
 			description: post.description,
+			url: `${PEACE_NGO_URL}/blogs/${post.slug}`,
 		},
 		twitter: {
 			...(post.image && { images: [post.image] }),
