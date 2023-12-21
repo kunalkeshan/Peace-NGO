@@ -9,7 +9,7 @@ export default async function Gallery() {
 		query: galleryImagesQuery,
 	});
 	return (
-		<section className=''>
+		<main className=''>
 			<div className='w-full lg:max-w-7xl lg:mx-auto gap-4 p-4 md:px-16 py-[40px] md:py-[80px] lg:py-[100px]'>
 				<div className='md:hidden'>
 					<Box sx={{ width: '100%', height: '100%' }}>
@@ -48,6 +48,6 @@ export default async function Gallery() {
 					</Box>
 				</div>
 			</div>
-		</section>
+		</main>
 	);
 }
