@@ -1,5 +1,10 @@
+/**
+ * Home Page - Hero CTA Component
+ */
+
 'use client';
 
+// Dependencies
 import { ArrowRightCircle } from 'lucide-react';
 import DonateButton from '../resusable/DonateButton';
 

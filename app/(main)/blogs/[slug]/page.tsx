@@ -1,3 +1,8 @@
+/**
+ * Individual Blog Page
+ */
+
+// Dependencies
 import { client } from '@/sanity/lib/client';
 import { postPathsQuery, postQuery } from '@/sanity/lib/querires';
 import { sanityFetch } from '@/sanity/lib/sanityFetch';

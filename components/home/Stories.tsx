@@ -1,5 +1,10 @@
+/**
+ * Home Page - Stories/Testimonials Component
+ */
+
 'use client';
 
+// Dependencies
 import React from 'react';
 import Image from 'next/image';
 import StoryCard from '../cards/StoryCard';

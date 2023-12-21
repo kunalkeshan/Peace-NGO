@@ -1,5 +1,9 @@
+/**
+ * Footer Component
+ */
+
+// Dependencies
 import Link from 'next/link';
-import { Instagram, Linkedin, Mail, Twitter } from 'lucide-react';
 import { FOOTER_NAVIGATION } from '@/data/navigation';
 import { PEACE_NGO_SOCIALS } from '@/data/ngo';
 
@@ -11,15 +15,12 @@ const Footer = () => {
 					<div className='w-full border-b p-2 md:p-4'>
 						<div className='flex flex-col items-center justify-between md:items-start lg:flex-row'>
 							<Link href='/' className='flex items-center'>
-								<Link
-									href={'/'}
-									className='mb-[40px] leading-none lg:mb-0 font-semibold text-lg md:text-2xl'
-								>
+								<p className='mb-[40px] leading-none lg:mb-0 font-semibold text-lg md:text-2xl'>
 									<span className='text-app-secondary'>
 										Peace
 									</span>{' '}
-									NGO
-								</Link>
+									<span>NGO</span>
+								</p>
 							</Link>
 							<div className='flex w-full flex-col items-center justify-between md:flex-row lg:justify-end'>
 								<div className='mb-4 flex items-center justify-start lg:ml-[64px]'>

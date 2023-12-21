@@ -1,5 +1,9 @@
+/**
+ * Privacy Policy Page
+ */
+
+// Dependencies
 import { PEACE_NGO_PRIVACY_POLICY } from '@/data/legal';
-import React from 'react';
 
 const PrivacyPolicy = () => {
 	return (

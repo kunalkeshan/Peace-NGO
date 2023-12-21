@@ -1,3 +1,8 @@
+/**
+ * Gallery Page
+ */
+
+// Dependencies
 import { sanityFetch } from '@/sanity/lib/sanityFetch';
 import { galleryImagesQuery } from '@/sanity/lib/querires';
 import Box from '@mui/material/Box';

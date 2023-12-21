@@ -1,3 +1,8 @@
+/**
+ * Application Robots Text File
+ */
+
+// Dependencies
 import { MetadataRoute } from 'next';
 import { PEACE_NGO_URL } from '@/data/ngo';
 

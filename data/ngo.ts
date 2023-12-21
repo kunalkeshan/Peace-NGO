@@ -16,7 +16,7 @@ export const PEACE_NGO_ADDRESS =
 
 export const PEACE_NGO_PHONE = '+919876543210' as const;
 
-export const PEACE_NGO_URL = 'https://projectpeace.in';
+export const PEACE_NGO_URL = 'https://projectpeace.in' as const;
 
 export const PEACE_NGO_SOCIALS: SocialsList = [
 	{

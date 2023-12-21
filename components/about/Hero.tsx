@@ -1,3 +1,8 @@
+/**
+ * About Page - Hero Component
+ */
+
+// Dependencies
 import React from 'react';
 import DonateButton from '../resusable/DonateButton';
 

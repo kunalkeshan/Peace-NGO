@@ -1,3 +1,10 @@
+/**
+ * Sanity Image Component
+ */
+
+'use client';
+
+// Dependencies
 import { useNextSanityImage } from 'next-sanity-image';
 import Image from 'next/image';
 import { client } from '@/sanity/lib/client';

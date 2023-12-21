@@ -1,5 +1,9 @@
+/**
+ * Home Page - What We Do Component
+ */
+
+// Dependencies
 import Image from 'next/image';
-import React from 'react';
 
 const WhatWeDo = () => {
 	const CONTENT = [

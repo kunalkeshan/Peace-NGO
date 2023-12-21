@@ -1,5 +1,10 @@
+/**
+ * Story/Testimonial Component
+ */
+
+// Dependencies
 import React from 'react';
-import Image from 'next/image';
+// import Image from 'next/image';
 
 type StoryCardProps = React.ComponentProps<'li'> & {
 	story: Story;
