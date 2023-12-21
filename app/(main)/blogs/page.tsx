@@ -1,3 +1,8 @@
+/**
+ * All Blogs List Page
+ */
+
+// Dependencies
 import { postsQuery } from '@/sanity/lib/querires';
 import { sanityFetch } from '@/sanity/lib/sanityFetch';
 import BlogsSection from '@/components/home/Blogs';

@@ -1,4 +1,8 @@
-import React from 'react';
+/**
+ * Terms And Conditions Page
+ */
+
+// Dependencies
 import { PEACE_NGO_TERMS_AND_CONDITIONS } from '@/data/legal';
 
 const TermsAndConditions = () => {

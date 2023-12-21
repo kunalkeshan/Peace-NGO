@@ -1,3 +1,8 @@
+/**
+ * Application Sitemap
+ */
+
+// Dependencies
 import { client } from '@/sanity/lib/client';
 import { postPathsQuery } from '@/sanity/lib/querires';
 import { MetadataRoute } from 'next';

@@ -1,8 +1,13 @@
+/**
+ * Root Layout
+ */
+
+// Dependencies
+import { Metadata } from 'next';
+import { TooltipProvider } from '@/components/ui/tooltip';
 import Navbar from '@/layouts/Navbar';
 import Footer from '@/layouts/Footer';
-import { TooltipProvider } from '@/components/ui/tooltip';
 import { PEACE_NGO_URL } from '@/data/ngo';
-import { Metadata } from 'next';
 
 export const metadata: Metadata = {
 	metadataBase: new URL(PEACE_NGO_URL),
