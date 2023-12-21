@@ -58,7 +58,7 @@ const DonateButton: React.FC<DonateButtonProps> = ({
 					/>
 				</Button>
 			</DialogTrigger>
-			<DialogContent>
+			<DialogContent className='max-w-sm md:max-w-lg'>
 				<DialogHeader>
 					<DialogTitle className='text-center'>
 						Feel free to get in touch with us!
