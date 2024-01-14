@@ -8,7 +8,7 @@ import ImageListItem from '@mui/material/ImageListItem';
 import Image from 'next/image';
 
 type GalleryImageProps = React.ComponentProps<'li'> & {
-	image: GalleryImage;
+	image: GalleryImage & { blurDataURL: string };
 };
 
 const GalleryImageItem: React.FC<GalleryImageProps> = ({ image }) => {
@@ -20,9 +20,11 @@ const GalleryImageItem: React.FC<GalleryImageProps> = ({ image }) => {
 					loading='lazy'
 					src={image?.image ?? ''}
 					className='w-full rounded-lg border-b border-black'
-					width={10}
-					height={10}
 					alt={image?.alt}
+					width={100}
+					height={100}
+					placeholder='blur'
+					blurDataURL={image.blurDataURL}
 				/>
 			</div>
 		</ImageListItem>

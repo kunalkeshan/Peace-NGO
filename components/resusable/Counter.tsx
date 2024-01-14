@@ -15,7 +15,7 @@ type CounterProps = React.ComponentProps<'p'> & {
 
 const Counter: React.FC<CounterProps> = ({ from, to, ...props }) => {
 	const nodeRef = useRef<HTMLParagraphElement | null>(null);
-	const isInView = useInView(nodeRef);
+	const isInView = useInView(nodeRef, { once: true });
 
 	useEffect(() => {
 		const node = nodeRef.current;
