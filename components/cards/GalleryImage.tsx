@@ -14,15 +14,19 @@ type GalleryImageProps = React.ComponentProps<'li'> & {
 const GalleryImageItem: React.FC<GalleryImageProps> = ({ image }) => {
 	return (
 		<ImageListItem>
-			<div>
+			<div className='w-full h-full'>
 				<Image
 					unoptimized
 					loading='lazy'
 					src={image?.image ?? ''}
-					className='w-full rounded-lg border-b border-black'
+					className='object-cover rounded-lg border-b border-black'
 					alt={image?.alt}
-					width={100}
-					height={100}
+					width={200}
+					height={160}
+					style={{ width: '100%', height: '100%' }}
+					sizes='(max-width: 768px) 100vw,
+						(max-width: 1200px) 50vw,
+							33vw'
 					placeholder='blur'
 					blurDataURL={image.blurDataURL}
 				/>
