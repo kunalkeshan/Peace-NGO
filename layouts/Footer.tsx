@@ -27,7 +27,7 @@ const Footer = () => {
 								</p>
 							</Link>
 							<div className='flex w-full flex-col items-center justify-between md:flex-row lg:justify-end'>
-								<div className='mb-4 flex items-center justify-start lg:ml-[64px]'>
+								{/* <div className='mb-4 flex items-center justify-start lg:ml-[64px]'>
 									{PEACE_NGO_SOCIALS.map((social) => (
 										<Link
 											key={`footer-social-${social.name}`}
@@ -41,7 +41,7 @@ const Footer = () => {
 											<social.Icon />
 										</Link>
 									))}
-								</div>
+								</div> */}
 							</div>
 						</div>
 					</div>

@@ -56,7 +56,7 @@ const Founder: React.FC<FounderProps> = ({ founder }) => {
 						{founder?.bio}
 					</p>
 				</div>
-				<ul className='relative flex gap-4'>
+				{/* <ul className='relative flex gap-4'>
 					{socials.map((social) => (
 						<li key={`founder-social-${social.url}`}>
 							<Link href={social.url || '#'} prefetch={false}>
@@ -64,7 +64,7 @@ const Founder: React.FC<FounderProps> = ({ founder }) => {
 							</Link>
 						</li>
 					))}
-				</ul>
+				</ul> */}
 			</div>
 			<div className='lg:w-1/2 h-full flex items-center justify-start'>
 				<div className='lg:w-3/4'>
