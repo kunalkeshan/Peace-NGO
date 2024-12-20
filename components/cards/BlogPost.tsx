@@ -14,7 +14,11 @@ type BlogPostProps = React.ComponentProps<'li'> & {
 const BlogPostCard: React.FC<BlogPostProps> = ({ post }) => {
 	return (
 		<li className='group'>
-			<Link href={`/blogs/${post.slug}`} className='flex flex-col gap-4'>
+			<Link
+				href={`/blogs/${post.slug}`}
+				className='flex flex-col gap-4'
+				prefetch={false}
+			>
 				<div className='w-full h-72 overflow-hidden rounded-lg relative z-20'>
 					<Image
 						src={post.image || ''}

@@ -31,7 +31,7 @@ const Navbar = () => {
 			} z-50`}
 		>
 			<div className='w-full h-[5rem] flex justify-between items-center p-4 md:px-16 lg:max-w-7xl lg:mx-auto'>
-				<Link href='/'>
+				<Link href='/' prefetch={false}>
 					<h1 className='font-semibold text-lg md:text-2xl'>
 						<span className='text-app-secondary'>PEACE</span> NGO
 					</h1>
@@ -48,6 +48,7 @@ const Navbar = () => {
 									target={item.target}
 									href={item.url}
 									className='w-full'
+									prefetch={false}
 								>
 									{item.name}
 								</Link>

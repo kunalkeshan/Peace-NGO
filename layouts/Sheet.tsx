@@ -40,7 +40,11 @@ const SheetComponent = () => {
 			>
 				<SheetHeader className='!text-center'>
 					<SheetTitle className='font-semibold text-lg md:text-2xl'>
-						<Link href={'/'} onClick={handleCloseSheet}>
+						<Link
+							href={'/'}
+							onClick={handleCloseSheet}
+							prefetch={false}
+						>
 							<span className='text-app-secondary'>PEACE</span>{' '}
 							NGO
 						</Link>
@@ -68,6 +72,7 @@ const SheetComponent = () => {
 												? 'text-primary-clinic'
 												: ''
 										} w-full hover:text-primary-clinic transition-all`}
+										prefetch={false}
 									>
 										{link.name}
 									</Link>

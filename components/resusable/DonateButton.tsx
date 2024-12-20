@@ -69,12 +69,14 @@ const DonateButton: React.FC<DonateButtonProps> = ({
 					<Link
 						href={`tel:${PEACE_NGO_PHONE}`}
 						className='flex items-center gap-2 hover:text-app-secondary mt-4'
+						prefetch={false}
 					>
 						<Phone strokeWidth={1.5} size={20} /> {PEACE_NGO_PHONE}
 					</Link>
 					<Link
 						href={`tel:${PEACE_NGO_EMAIL}`}
 						className='flex items-center gap-2 hover:text-app-secondary'
+						prefetch={false}
 					>
 						<Mail strokeWidth={1.5} size={20} /> {PEACE_NGO_EMAIL}
 					</Link>
@@ -87,6 +89,7 @@ const DonateButton: React.FC<DonateButtonProps> = ({
 								href={social.url}
 								title={social.name}
 								className='transition-all duration-300 hover:text-app-secondary'
+								prefetch={false}
 							>
 								<social.Icon size={20} strokeWidth={1.5} />
 							</Link>
