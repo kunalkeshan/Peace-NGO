@@ -93,6 +93,7 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member }) => {
 							key={`team-member-social-${member._id}-${social.url}`}
 							title={social.url!}
 							className='group/team'
+							prefetch={false}
 						>
 							<Button asChild size='icon' variant={'ghost'}>
 								<li>

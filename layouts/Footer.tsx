@@ -14,7 +14,11 @@ const Footer = () => {
 				<div className='flex flex-col items-stretch justify-start'>
 					<div className='w-full border-b p-2 md:p-4'>
 						<div className='flex flex-col items-center justify-between md:items-start lg:flex-row'>
-							<Link href='/' className='flex items-center'>
+							<Link
+								href='/'
+								className='flex items-center'
+								prefetch={false}
+							>
 								<p className='mb-[40px] leading-none lg:mb-0 font-semibold text-lg md:text-2xl'>
 									<span className='text-app-secondary'>
 										Peace
@@ -32,6 +36,7 @@ const Footer = () => {
 											href={social.url}
 											title={social.name}
 											className='mx-[2px] p-3 transition-all duration-300 hover:text-app-secondary'
+											prefetch={false}
 										>
 											<social.Icon />
 										</Link>
@@ -49,6 +54,7 @@ const Footer = () => {
 										href={link.url}
 										target={link.target}
 										className='py-2 text-[14px] text-slate-500 hover:text-slate-800 transition-all duration-300'
+										prefetch={false}
 									>
 										{link.name}
 									</Link>
