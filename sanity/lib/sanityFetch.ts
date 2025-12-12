@@ -23,7 +23,8 @@ export async function sanityFetch<QueryResponse>({
 	tags?: string[];
 	options?: FilteredResponseQueryOptions & NextFetchRequestConfig;
 }): Promise<QueryResponse> {
-	const isDraftMode = draftMode().isEnabled;
+	const draft = await draftMode();
+	const isDraftMode = draft.isEnabled;
 	if (isDraftMode && !token) {
 		throw new Error(
 			'The `SANITY_API_READ_TOKEN` environment variable is required.'
