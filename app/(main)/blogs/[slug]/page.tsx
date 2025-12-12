@@ -12,8 +12,8 @@ import Post from '@/components/blog/Post';
 import { PEACE_NGO_URL } from '@/data/ngo';
 
 type Props = {
-	params: { slug: string };
-	searchParams: { [key: string]: string | string[] | undefined };
+	params: Promise<{ slug: string }>;
+	searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 };
 export async function generateStaticParams() {
 	const posts = await client.fetch(postPathsQuery);
@@ -24,7 +24,8 @@ export async function generateMetadata(
 	{ params, searchParams }: Props,
 	parent: ResolvingMetadata
 ): Promise<Metadata> {
-	const post = await client.fetch<BlogPost>(postQuery, params);
+	const resolvedParams = await params;
+	const post = await client.fetch<BlogPost>(postQuery, resolvedParams);
 
 	return {
 		title: `${post.title} | Peace NGO`,
@@ -46,7 +47,8 @@ export async function generateMetadata(
 }
 
 export default async function Blog({ params }: Props) {
-	const post = await sanityFetch<BlogPost>({ query: postQuery, params });
+	const resolvedParams = await params;
+	const post = await sanityFetch<BlogPost>({ query: postQuery, params: resolvedParams });
 	if (!post) {
 		redirect('/blogs');
 	}
